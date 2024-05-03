@@ -2,7 +2,7 @@
   "name": "violetta-micorek",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/aborzym/violetta-micorek",
+  "homepage": "https://aborzym.github.io/violetta-micorek",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /violetta-micorek/"
