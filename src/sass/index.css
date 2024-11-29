@@ -1,0 +1,121 @@
+@charset "UTF-8";
+@import '~node_modules/modern-normalize/modern-normalize.css';
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Marcellus", sans-serif;
+  background-color: #f5f5f5;
+  color: #333333;
+}
+body a {
+  text-decoration: none;
+  color: #333333;
+}
+body a:hover {
+  color: #c1121f;
+}
+
+.btn-primary {
+  color: #c1121f;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: 1px solid #c1121f;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+  transition: 0.4s ease;
+}
+.btn-primary:hover {
+  background-color: #c1121f;
+  color: #f5f5f5;
+  border: 1px solid #f5f5f5;
+}
+
+/* Styl dla nagłówka */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: #1d3557;
+  color: #f5f5f5;
+  text-transform: uppercase;
+  font-family: "Marcellus", sans-serif;
+}
+.header .logo {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.header nav {
+  flex-grow: 1;
+  text-align: right;
+}
+.header .menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.header .menu li {
+  display: inline;
+}
+.header .menu li a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.header .menu li a:hover {
+  color: #c1121f;
+}
+
+/* Dodatkowe style na mobilne urządzenia */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    padding-left: 0;
+  }
+  .menu li {
+    width: 100%;
+    text-align: left;
+  }
+}
+.main-section {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3)), url("../../assets/backround_photo.webp");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 80px 20px;
+  height: 400px;
+}
+
+.title {
+  font-size: 4rem;
+  margin: 0;
+  color: #1d3557;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 2.5rem;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+.main-adress,
+.main-phone {
+  font-size: 1rem;
+  margin: 5px 0;
+}/*# sourceMappingURL=index.css.map */
