@@ -1,0 +1,16 @@
+.block {
+  @include flex(row, 20px);
+}
+
+.photo {
+  width: 550px;
+  margin-top: 1em;
+}
+
+.info {
+  width: 550px;
+}
+
+.services-element {
+  margin-bottom: 5px;
+}
