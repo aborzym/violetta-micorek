@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",(()=>{const e=document.getElementById("open-modal"),d=document.getElementById("modal-overlay"),t=document.querySelector(".close-modal"),n=()=>{d.classList.add("hidden"),document.documentElement.style.overflow=""};e.addEventListener("click",(()=>{d.classList.remove("hidden"),document.documentElement.style.overflow="hidden"})),t.addEventListener("click",n),d.addEventListener("click",(e=>{e.target===d&&n()})),document.addEventListener("keydown",(e=>{"Escape"===e.key&&n()}))}));
+//# sourceMappingURL=index.894920a0.js.map
