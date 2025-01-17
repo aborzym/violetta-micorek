@@ -199,8 +199,8 @@ body a:hover {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 30%;
-     object-position: 30%;
+  -o-object-position: 28%;
+     object-position: 28%;
   border-radius: 10px;
 }
 
