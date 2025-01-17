@@ -1,11 +1,10 @@
-/* Styl dla nagłówka */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 40px 30px;
   background-color: $navy-blue;
-  color: $light-gray;
+  color: $light-grey;
   text-transform: uppercase;
   font-family: 'Marcellus', sans-serif;
 
@@ -35,7 +34,7 @@
 
     li a {
       text-decoration: none;
-      color: $light-gray;
+      color: $light-grey;
       font-weight: 500;
       transition: color 0.3s;
 

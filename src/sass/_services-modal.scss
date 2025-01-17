@@ -1,0 +1,62 @@
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: visibility 0s, opacity 0.3s ease; /* Płynne przejście */
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85); // Zaciemnienie tła
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow-y: auto; // Pasek przewijania dla okna modalnego, zamiast body
+  padding: 20px; // Dodatkowa przestrzeń na małych ekranach
+}
+.modal-overlay:not(.hidden) {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-list {
+  margin-bottom: 50px;
+}
+.modal-element {
+  padding-top: 15px;
+  &p {
+    text-align: justify;
+  }
+}
+.modal {
+  background: $light-grey;
+  padding: 40px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 900px;
+  max-height: 80%;
+  overflow-y: auto; // Pionowy pasek przewijania wewnątrz modalnego okna
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+
+  .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: crimson;
+    }
+  }
+}

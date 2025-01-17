@@ -2,12 +2,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', 'Marcellus', sans-serif;
-  background-color: $light-gray; // Tło główne
-  color: $dark-gray; // Kolor tekstu
+  background-color: $light-grey; // Tło główne
+  color: $dark-grey; // Kolor tekstu
 
   a {
     text-decoration: none;
-    color: $dark-gray;
+    color: $dark-grey;
 
     &:hover {
       color: $crimson-red; // Karmazynowy na hover
@@ -27,7 +27,7 @@ body {
 }
 
 .m_grey {
-  background-color: $medium-gray;
+  background-color: $medium-grey;
 }
 
 .green {
