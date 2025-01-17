@@ -14,3 +14,22 @@ body {
     }
   }
 }
+
+.section {
+  text-align: center;
+  padding-block: 40px;
+}
+
+.container {
+  margin: 0 auto; // Wyśrodkowanie na osi poziomej
+  text-align: center;
+  max-width: 1200px;
+}
+
+.m_grey {
+  background-color: $medium-gray;
+}
+
+.green {
+  color: green;
+}
